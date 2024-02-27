@@ -1,0 +1,47 @@
+<section>
+    <div class="container" [style.font-family]="InputPolice" [style.font-size]="InputSize+'px'" [style.text-align]="InputAlign">
+        Bonjour {{this.inputName}}
+    </div>
+    <br>
+    <form>
+      <div>
+        <label>Insérez votre nom</label>
+        <input type="text" placeholder="Nom" [(ngModel)]="inputName" name="nom">
+      </div>
+      <br>
+
+      <div>
+        <label>Choisissez la police</label>
+        <select type="select" placeholder="Police" [(ngModel)]="InputPolice" name="police">
+          <option value="Arial">Arial</option>
+          <option value="Comic Sans">Comic Sans</option>
+          <option value="Helvetica">Helvetica</option>
+          <option value="Impact">Impact</option>
+          <option value="Times New Roman">Times New Roman</option>
+        </select>
+      </div>
+      <br>
+
+      <div>
+        <label>Choisissez la taille de police (px)</label>
+        <input type="number" placeholder="Taille" [(ngModel)]="InputSize" name="taille" >
+      </div>
+      <br>
+
+      <div>
+        <label>Choisissez l'alignement du contenu</label>
+        <br>
+        <div>
+          <Label>Left</Label>
+          <input type="radio" placeholder="Alignement" [(ngModel)]="InputAlign" name="alignement" value = "left">
+          <br>
+          <Label>Center</Label>
+          <input type="radio" placeholder="Alignement" [(ngModel)]="InputAlign" name="alignement"  value = "center">
+          <br>
+          <Label>Right</Label>
+          <input type="radio" placeholder="Alignement" [(ngModel)]="InputAlign" name="alignement"  value = "right">
+        </div>
+      </div>
+
+    </form>
+  </section>

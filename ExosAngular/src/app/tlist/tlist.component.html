@@ -1,0 +1,20 @@
+<section>
+    <div>
+        <table>
+            <tr>
+                <th>ID <button (click)="SortColumn('id')">  🔽 </button></th>
+                <th>Amount <button (click)="SortColumn('amount')">  🔽 </button></th>
+                <th>Balance <button (click)="SortColumn('balance')">  🔽 </button></th>
+                <th>Label <button (click)="SortColumn('label')">  🔽 </button></th>
+                <th>Date <button (click)="SortColumn('date')">  🔽 </button></th>
+            </tr>
+            <tr *ngFor="let transaction of transactions" routerLink='/detail/{{ transaction.id }}'>
+                    <td>{{ transaction.id }}</td>
+                    <td>{{ transaction.amount }}</td>
+                    <td>{{ transaction.balance }}</td>
+                    <td>{{ transaction.label }}</td>
+                    <td>{{ transaction.date }}</td>
+            </tr>
+        </table>
+    </div>
+</section>

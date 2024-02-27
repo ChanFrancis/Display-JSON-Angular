@@ -1,0 +1,16 @@
+.Calculatrice {
+    display: flex;
+    gap: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+
+th,td {
+    padding: 5px 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+}
