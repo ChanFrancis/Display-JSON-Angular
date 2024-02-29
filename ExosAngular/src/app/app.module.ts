@@ -5,8 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { ExoInputsComponent } from './exo-inputs/exo-inputs.component';
-import { ExoCalculatriceComponent } from './exo-calculatrice/exo-calculatrice.component';
 import { TlistComponent } from './tlist/tlist.component';
 import { DetailsTransactionComponent } from './details-transaction/details-transaction.component';
 import { NavTimeComponent } from './nav-time/nav-time.component';
@@ -15,8 +13,6 @@ import { NavTimeComponent } from './nav-time/nav-time.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ExoInputsComponent,
-    ExoCalculatriceComponent,
     TlistComponent,
     DetailsTransactionComponent,
     NavTimeComponent

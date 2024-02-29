@@ -28,17 +28,15 @@ export class DetailsTransactionComponent implements OnInit{
   }
 
   loadTransactions(id: string): void {
-    // Convert the id to a number before passing it to getTransactionById
     const numericId = id;
     
     this.transactionService.getTransactionById(numericId)
       .subscribe(
         (data: any) => {
-          // Check if data is an array
+
           if (Array.isArray(data)) {
-            this.transactions = data; // Assign data directly
+            this.transactions = data; 
           } else {
-            // Convert object to array of values
             this.transactions = Object.values(data);
           }
         },

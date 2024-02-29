@@ -8,3 +8,9 @@ nav {
     margin-bottom: 15px;
 }
 
+a {
+    color: white;
+    position: absolute;
+    left: 10px;
+    text-decoration: none;
+}
